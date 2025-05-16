@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Easy Recipes</title>
+        <link rel="stylesheet" href="..\Task1\Styles.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href = "..\Task1\index.html">Home</a>
+            <a href = "..\Task1\breakfast.html">Breakfast</a>
+            <a href = "..\Task1\lunch.html">Lunch</a>
+            <a href = "..\Task1\dinner.html">Dinner</a>
+            <a href = "..\Task1\dessert.html">Dessert</a>
+            <a href = "contactUs.html">Contact Us</a>
+        </nav>
+        <header>
+        <h1>Leave a feedback!!</h1>
+        </header>
+       
+        <form id="form">
+            <label for="name">Name</label><br>
+            <input type="textbox" id="name" name="name" placeholder="Name" required/><br>
+            <br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required/><br>
+            <br>
+            <label for="subject">Type</label><br>
+            <select id="subject" name="subject" required>
+                <option value="recipe">Recipe related query</option>
+                <option value="bug">Report a bug</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other query</option>
+            </select><br>
+            <br>
+            <label for="message">Message</label><br>
+            <textarea rows="5" id="message" name="message" placeholder="Messsage" required></textarea><br>
+            <br>
+            <button class="form" type="submit" id="btn">Submit</button>
+        </form>
+
+        <div id="modal" class="modal">
+            <div class="modalContent"> 
+                <h2 class="modal">THANK YOU!!</h2>
+                <p>Your message has been sent. We'll get back to you shortly.</p>
+                <button class="modal" id="closeModal">Close</button>
+            </div>
+        </div>
+        <footer>
+            <!-- <p>© Easy Recipes</p> -->
+            © Easy Recipes
+        </footer>
+
+        <script src="Script.js"></script>
+    </body>
+</html>
