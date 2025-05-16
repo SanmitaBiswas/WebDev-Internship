@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: rgb(38, 35, 59);
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #8e91a4;
+}
+
+/* Navigation Styles */
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(38, 35, 59);
+}
+
+nav a, nav button a {
+    color: #8e91a4;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+nav a:hover, nav button a:hover {
+    color: #8696ff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+/* Section Styles */
+section {
+    margin: 100px auto;
+    padding: 50px;
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgb(96, 180, 180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section p, section h1, section h2, section h3 {
+    text-align: center;
+}
+
+section h1 {
+    color: #bde4eb;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section h2 {
+    color: #bde4eb;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section h3 {
+    color: #aab6ec;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #8e91a4;
+}
+
+section a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section p a:hover {
+    color: #6075f9;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    color: #c5a8f7;
+    background-color: rgb(38, 35, 59);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Button Styles */
+button {
+    background-color: rgb(38, 35, 59);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: groove;
+    border-color: rgb(96, 180, 180);
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(96, 180, 180);
+}
+
+button a {
+    color: #8e91a4;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #8696ff;
+}
+
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+    section {
+        padding: 30px;
+        max-width: 95%;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section h3 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
